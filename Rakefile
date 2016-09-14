@@ -2,7 +2,6 @@
 
 require 'rubygems'
 require 'hoe'
-require 'rubyforge'
 
 Hoe.plugin :doofus
 Hoe.plugin :gemspec
@@ -11,7 +10,6 @@ Hoe.plugin :rubyforge
 
 Hoe.spec 'text-hyphen' do
   developer('Austin Ziegler', 'austin@rubyforge.org')
-  self.rubyforge_name = 'text-format'
 
   self.spec_extras[:required_ruby_version] = '< 1.9'
 

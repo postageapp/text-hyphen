@@ -28,7 +28,6 @@ a significant improvement over its predecessor, TeX::Hyphen.}
   s.homepage = %q{http://rubyforge.org/projects/text-format/}
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
-  s.required_ruby_version = Gem::Requirement.new("< 1.9")
   s.rubyforge_project = %q{text-format}
   s.rubygems_version = %q{1.4.2}
   s.summary = %q{Text::Hyphen will hyphenate words using modified versions of TeX hyphenation patterns}
@@ -38,14 +37,12 @@ a significant improvement over its predecessor, TeX::Hyphen.}
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rubyforge>, [">= 2.0.4"])
       s.add_development_dependency(%q<hoe-doofus>, ["~> 1.0"])
       s.add_development_dependency(%q<hoe-gemspec>, ["~> 1.0"])
       s.add_development_dependency(%q<hoe-git>, ["~> 1.0"])
       s.add_development_dependency(%q<hoe-seattlerb>, ["~> 1.0"])
       s.add_development_dependency(%q<hoe>, [">= 2.8.0"])
     else
-      s.add_dependency(%q<rubyforge>, [">= 2.0.4"])
       s.add_dependency(%q<hoe-doofus>, ["~> 1.0"])
       s.add_dependency(%q<hoe-gemspec>, ["~> 1.0"])
       s.add_dependency(%q<hoe-git>, ["~> 1.0"])
@@ -53,7 +50,6 @@ a significant improvement over its predecessor, TeX::Hyphen.}
       s.add_dependency(%q<hoe>, [">= 2.8.0"])
     end
   else
-    s.add_dependency(%q<rubyforge>, [">= 2.0.4"])
     s.add_dependency(%q<hoe-doofus>, ["~> 1.0"])
     s.add_dependency(%q<hoe-gemspec>, ["~> 1.0"])
     s.add_dependency(%q<hoe-git>, ["~> 1.0"])
